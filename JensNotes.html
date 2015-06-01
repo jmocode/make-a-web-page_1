@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<head>
+  <title>Jen's Notes</title>
+  <link rel="stylesheet" href="jen-style.css">
+</head>
+<body>
+  <div class="TOC">
+    <h1>Table of Contents</h1>
+    <ol>
+      <li><a href="#module-1">1: Introduction To HTML</a>
+        <ul>
+          <li><a href="#module-1-1">Coding</a></li>
+          <li><a href="#module-1-2">Basics Of The Web</a></li>
+          <li><a href="#module-1-3">HTML Lingo</a></li>
+          <li><a href="#module-1-4">5 Steps To Thinking Like A Programmer</a></li>
+          <li><a href="#module-1-5">HTML Examples</a></li>
+          <li><a href="#module-1-6">Basic HTML Structure</a><li>
+          <li><a href="#module-1-7">Computers Are Stupid</a></li>
+          <li><a href="#module-1-8">Forgetting Is Fine</a></li>
+        </ul>
+      </li>
+      <li class="TOC-module"><a href="#module-2">2: Structured Documents</a>
+        <ul>
+          <li><a href="#module-2-1">The "Tree-Like" Structure</a></li>
+          <li><a href="#module-2-2">Boxes, Boxes, Boxes!</a></li>
+          <li><a href="#module-2-3">Developer Tools</a></li>
+          <li><a href="#module-2-4">Text Editing Programs</a></li>
+        </ul>
+      </li>
+      <li class="TOC-module"><a href="#module-3">3: Hello CSS</a>
+        <ul>
+          <li><a href="#module-3-1">Introducing CSS</a></li>
+          <li><a href="#module-3-2">Consistency And Repetition</a></li>
+          <li><a href="#module-3-3">Dealing With Errors</a></li>
+          <li><a href="#module-3-4">Definitions</a></li>
+          <li><a href="#module-3-5">Resources</a></li>
+        </ul>
+      </li>
+    </ol>
+  </div>
+  <h1>Intro To Programming</h1>
+  <div class="module">
+    <h2 id="module-1">1: Introduction To HTML</h2>
+    <div class="concept" id="module-1-1">
+      <div class="concept-title">
+        Coding
+      </div>
+      <div class="concept-description">
+        <p>
+          Coding a computer means telling a computer what you want it to do by writing text <em>in a way</em> that it can understand. Also referred to as programming language.
+        </p>
+      </div>
+    </div>
+    <div class="concept" id="module-1-2">
+      <div class="concept-title">
+        Basics Of The Web
+      </div>
+      <div class="concept-description">
+        <p>
+          The web is comprised of collections of HTML documents. A web page is a text document
+          written in a language called HTML. Web browsers read these documents, and then interpret
+          and display them. HTML (Hyper Text Markup Language) is the format for the language of 
+          the many types of documents on the web. URLs (Uniform Resource Identifier) is the 
+          address for documents on the web. HTTP is (Hypertext Transfer Protocol) rules for 
+          transferring files (text, graphic images, sound, video, and other multimedia files) 
+          on the web. Web Application is any computer program that runs in a web browser.
+        </p>
+      </div>
+    </div>
+    <div class="concept" id="module-1-3">
+      <div class="concept-title">
+        Basic HTML Lingo
+      </div>
+      <div class="concept-description">
+        <ul>
+          <li><span class="code">Tag</span> - An HTML tag is always contained within angled brackets. Most tags
+          have an opening tag and a closing tag, some tags called <em>void</em> tags do not
+          require a closing tag.
+          </li>
+          <li><span class="code">Element</span> - An HTML element refers to everything within a set of opening
+          and closing tags.
+          </li>
+          <li><span class="code">Attribute</span> - This is a property of an HTML element. For example, to set
+          the href attribute of an anchor tag you would write a href="www.url name.com" 
+          contained inside of angled brackets.
+          </li>
+      </ul>
+      </div>
+    </div>
+    <div class="concept" id="module-1-4">
+      <div class="concept-title">
+        5 Steps To Thinking Like A Programmer:
+      </div>
+      <div class="concept-description">
+        <ul>
+          <li><span class="code">Procedural Thinking</span> -Procedural thinking involves creating perfectly clear
+          and unambiguous instructions for a computer to follow.</li>
+          <li><span class="code">Abstract Thinking</span> - Abstract thinking means finding similarity, or 
+          as programmers would say, <b>generality</b> amongst seemingly different things.
+        </li>
+          <li><span class="code">Systems Thinking</span> - Systems thinking happens when you break a big problem
+          down into smaller pieces. Programmers do this when they create a plan (often on paper)
+          for how a program will work. It involves big-picture thinking and decision-making
+          about a problem and how different pieces of a program can work together to solve it.
+      </li>
+         <li><span class="code">Technological Empathy</span> - "Technological Empathy" comes in many forms. For
+         example, computer empathy is the ability to understand what a  computer is, how it
+          works, and what it is good and bad at doing. A computer is a tool, as are the 
+          programs we use and the programming languages used to write them. It's almost
+          impossible to program anything substantial without a basic understanding of how
+          these tools work.
+      </li>
+        <li><span class="code">Debugging</span> - Debugging is a systematic process of relentlessly identifying
+        the cause of a computer program that doesn't work. When a program doesn't work, it's
+        because there is a mistake (also known as a <em>bug</em>) somewhere in the 
+        computer code. Since these mistakes are an unavoidable part of programming, every
+        good programmer has a system for fixing them and it usually follows these steps:
+      <ol>
+        <li>Collective evidence (what makes this program fail?)</li>
+        <li>Generate theories (what may have caused this problem?)</li>
+       <li>Test those theories (if my theory is correct, how could I find out?)</li>
+        <li>Fix the problem.</li></ol>
+      </ul>
+      </div>
+    </div>
+    <div class="concept" id="module-1-5">
+      <div class="concept-title">
+        HTML Examples
+      </div>
+      <div class="concept-description">
+        <p>
+          <p>The basic structure for HTML markup is <b>name<em> contents</em>name</b> 
+          this consists of an opening tag, the contents and a closing tag called an element.</p>
+
+          b tag - The b tag renders text <b>BOLD</b>
+      <br>
+          em tag - The em tag renders text <em>italic</em>
+      <br>
+          br tag - The break tag creates a line break
+      <br>
+          p tag - The paragraph tag creates a box around text
+      <br>
+          a tag - The anchor tag creates a <a href="www.udacity.com">link</a> to another web page
+      <br>
+          img tag - The image tag adds an image
+          <img src="http://www.udacity.com/cs253x/hipmunk.png" alt="Hipmunk!">
+      </div>
+    </div>
+    <div class="concept" id="module-1-6">
+      <div class="concept-title">
+        Basic HTML Structure
+      </div>
+      <div class="concept-description">
+        <p>
+          Basic HTML Document Structure includes the following elements:<br><br> <b>!Doctype HTML</b><br> <b>html</b><br><b>head</b><br> <b>title</b><br><b>body</b></p>
+      </div>
+    </div>
+    <div class="concept" id="module-1-7">
+      <div class="concept-title">
+        Computers Are Stupid
+      </div>
+      <div class="concept-description">
+          <p>Programmers often describe computers as <em>"stupid"</em> because computers 
+          only understand the instructions that human programmers give to them. This makes
+          them highly sensitive and open to small mistakes (that a human would not make) leading to huge problems.
+      </p>
+      </div>
+    </div>
+    <div class="concept" id="module-1-8">
+      <div class="concept-title">
+        Forgetting Is Fine
+      </div>
+      <div class="concept-description">
+           <p>There are just too many facts to remember. Don't sweat the small stuff, it's ok to forget as long as you understand how to get the details when you need them. Important points are also recapped at the end of each lesson. (Remember, Google is your friend!)</p>
+            <b>On to stage 1!</b>
+      </div>
+      </div>
+    </div>
+  <div class="module">
+    <h2 id="module-2">2: Structuring Documents</h2>
+    <div class="concept" id="module-2-1">
+      <div class="concept-title">
+        The "Tree-Like" Structure
+      </div>
+      <div class="concept-description">
+        <p>
+          HTML elements can have other elements that branch inside of them, based on that fact it is referred to as the "tree-like" structure. The structure is made up of the basic HTML structure including the Doctype, html, head, title and body.
+        </p>
+      </div>
+    </div>
+    <div class="concept" id="module-2-2">
+      <div class="concept-title">
+        Boxes, Boxes, Boxes!
+      </div>
+      <div class="concept-description">
+        <p>
+          Thinking <em>Inside</em> The Box:
+          In a browser, the "tree-like" structure shows up as a series of nested boxes. There are boxes inside of boxes
+          inside of boxes, and so on. When you add any element to your html you create these boxes, most of which will be block or inline.
+        </p>
+      </div>
+    </div>
+    <div class="concept" id="module-2-3">
+      <div class="concept-title">
+        Developer Tools
+      </div>
+      <div class="concept-description">
+        <p>
+          Accessing the Developer Tools in your browser is exciting and awesome! There you will find a wealth helpful of information about any web page you visit. Everything from the font family and size to images, margins, colors etc. Whatever you want to know about a website, you name it, it's right there in Deverloper Tools!
+    
+        </p>
+      </div>
+    </div>
+    <div class="concept" id="module-2-4">
+      <div class="concept-title">
+        Text Editing programs
+      </div>
+      <div class="concept-description">
+        <p>
+          When writing code, programmers can't use regular programs like Notepad, Text Editor or Microsoft Word, we must use <em>special</em> text editors. These editors range from beginner to advanced. For example, some beginner text editors will automatically generate a closing HTML tag when you write an opening tag; however, beginner programs can be limited in other areas.</p>
+          <p>Some great text editors from beginner to advanced are:</p>
+          <p><a href="http://scratchpad.io/gusty-lamp-2121">Scratchpad.io</a></p>
+          <p><a href="http://codepen.io/">Codepen.io</a></p>
+          <p><a href="http://www.sublimetext.com/">Sublime Text</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="module">
+    <h2 id="module-3">3: Hello CSS</h2>
+    <div class="concept" id="module-3-1">
+      <div class="concept-title">
+        Introducing CSS
+      </div>
+      <div class="concept-description">
+        <p>
+          CSS stands for Cascading Style Sheets. These stylesheets give programmers a way to control the style of related HTML elements. This is done by giving similar HTML elements the same <span class="code">class</span> name and then specifying the style that should apply to that class.
+        </p>
+      </div>
+    </div>
+    <div class="concept" id="module-3-2">
+      <div class="concept-title">
+        Consistency and Repetition
+      </div>
+      <div class="concept-description">
+        <p>
+          Applying all of your CSS rules to multiple pages using a stylesheet makes it much easier. This means you can get things done faster and more consistently. It also saves a lot of potential repetition when styling individual pages.
+          If programmers aren't avoiding repetition, this can lead to errors in changes causing problems to arise.
+        </p>
+      </div>
+    </div>
+    <div class="concept" id="module-3-3">
+      <div class="concept-title">
+        Dealing With Errors
+      </div>
+      <div class="concept-description">
+        <p>
+          Errors are inevitable, and each issue will be unique in its own way. Adhering a few basic checks will make the process of debugging far more painless. Checking for syntax errors using web validation services is usually the initial go-to. Cross-browser issues can be prevented by using a good CSS reset to "level out" inconsistencies between browsers and make them uniform. Use Web Developer to outline elements, this extension allows you to outline elements based on different criteria. Check display types, CSS works best when you build within the standards outlined by the W3C. Spotting style errors by using Chrome DevTools to turn off styles is the easiest way to pinpoint a style error. Right next to the styles tab is the <em>computed</em> tab, this tells you exactly how the browser is computing your styles, when working on large projects, this is essential for resolving cascading issues, problems with selector specificity, and more. Debugging can really slow your momentum when working but using these tips will help to restore your creative sanity!
+        </p>
+      </div>
+    </div>
+    <div class="concept" id="module-3-4">
+      <div class="concept-title">
+        Definitions
+      </div>
+      <div class="concept-description">
+        <p>
+          <span class="code">HTML</span> (HyperText Markup Language) - The standard markup language used to create web pages.</p>
+          
+          <p><span class="code">CSS</span> (Cascading Style Sheets) - Style sheet language used for describing the look and formatting of a document written in a markup language.
+          </p>
+          <p><span class="code">DOM</span> (Document Object Model) - A cross-platform and language-independent convention for representing and interacting with objects in HTML (and other markup languages). The nodes of every document are organized in a tree structure, called the DOM tree.</p>
+      </div>
+    </div>
+    <div class="concept" id="module-3-5">
+      <div class="concept-title">
+        Resources
+      </div>
+      <div class="concept-description">
+        <p>
+          Some great resources to assist with building websites are:</p>
+          <p><a href="https://developer.mozilla.org/en-US/docs/web/css/reference">Mozilla Developer </a></p>
+          <p><a href="http://jigsaw.w3.org/css-validator/validator">CSS Validator </a></p>
+          <p><a href="http://validator.w3.org/check">HTML Validator </a></p>
+          <p><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">CSS Tricks </a></p>
+          <p>Google Developer Tools</p>
+          <p>On to Stage 2!</p>
+      </div>
+    </div>
+  </div>
+</body>
